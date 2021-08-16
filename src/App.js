@@ -10,5 +10,9 @@ class App extends Component {
   }
 }
 
+class Register extends Component {
+  
+}
+
 
 export default App;
