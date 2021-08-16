@@ -11,6 +11,19 @@ class App extends Component {
 }
 
 class Register extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      fullName: null,
+      email: null,
+      password: null,
+      errors: {
+        fullName: '',
+        email: '',
+        password: '',
+      }
+    };
+  }
   render() {
     return (
       <div className='wrapper'>
