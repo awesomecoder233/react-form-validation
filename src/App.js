@@ -22,7 +22,7 @@ class Register extends Component {
               <input type="text" name="fullName" onChange={this.handleChange} noValidate/>
             </div>
             <div className='email'>
-              <label htmlFor="email">Full Name</label>
+              <label htmlFor="email">Email</label>
               <input type="email" name="email" onChange={this.handleChange} noValidate/>
             </div>
             <div className='password'>
