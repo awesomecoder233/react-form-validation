@@ -1,4 +1,4 @@
-import { Component }from 'react';
+import { Component } from 'react';
 
 import './App.css';
 
@@ -24,6 +24,16 @@ class Register extends Component {
             <div className='email'>
               <label htmlFor="email">Full Name</label>
               <input type="email" name="email" onChange={this.handleChange} noValidate/>
+            </div>
+            <div className='password'>
+              <label htmlFor="password">Password</label>
+              <input type="password" name="password" onChange={this.handleChange} noValidate/>
+            </div>
+            <div className='info'>
+              <small>Password must be eight characters in length</small>
+            </div>
+            <div clasName='submit'>
+              <button>Create</button>
             </div>
           </form>
         </div>
