@@ -11,7 +11,25 @@ class App extends Component {
 }
 
 class Register extends Component {
-  
+  render() {
+    return (
+      <div className='wrapper'>
+        <div className='form-wrapper'>
+          <h2>Register</h2>
+          <form onSubmit={this.handleSubmit} noValidate>
+            <div className='fullName'>
+              <label htmlFor="fullName">Full Name</label>
+              <input type="text" name="fullName" onChange={this.handleChange} noValidate/>
+            </div>
+            <div className='email'>
+              <label htmlFor="email">Full Name</label>
+              <input type="email" name="email" onChange={this.handleChange} noValidate/>
+            </div>
+          </form>
+        </div>
+      </div>
+    );
+  }
 }
 
 
