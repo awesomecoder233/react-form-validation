@@ -46,6 +46,7 @@ class Register extends Component {
       console.log(errors)
     })
   }
+  
   render() {
     return (
       <div className='wrapper'>
@@ -67,7 +68,7 @@ class Register extends Component {
             <div className='info'>
               <small>Password must be eight characters in length</small>
             </div>
-            <div clasName='submit'>
+            <div className='submit'>
               <button>Create</button>
             </div>
           </form>
