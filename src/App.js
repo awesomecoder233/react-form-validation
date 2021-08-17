@@ -46,7 +46,15 @@ class Register extends Component {
       console.log(errors)
     })
   }
-  
+  handleSubmit = (event) => {
+    event.preventDefault();
+    if(validateForm(this.state.errors)) {
+      console.info('Valid Form')
+    } else {
+      console.error('Invalid Form')
+    }
+  }
+
   render() {
     return (
       <div className='wrapper'>
