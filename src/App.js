@@ -63,6 +63,7 @@ class Register extends Component {
   }
 
   render() {
+    const {errors} = this.state;
     return (
       <div className='wrapper'>
         <div className='form-wrapper'>
@@ -71,14 +72,20 @@ class Register extends Component {
             <div className='fullName'>
               <label htmlFor="fullName">Full Name</label>
               <input type="text" name="fullName" onChange={this.handleChange} noValidate/>
+              {errors.fullName.length > 0 && 
+                <span className='error'>{errors.fullName}</span>}
             </div>
             <div className='email'>
               <label htmlFor="email">Email</label>
               <input type="email" name="email" onChange={this.handleChange} noValidate/>
+              {errors.email.length > 0 && 
+                <span className='error'>{errors.email}</span>}
             </div>
             <div className='password'>
               <label htmlFor="password">Password</label>
               <input type="password" name="password" onChange={this.handleChange} noValidate/>
+              {errors.password.length > 0 && 
+                <span className='error'>{errors.password}</span>}
             </div>
             <div className='info'>
               <small>Password must be eight characters in length</small>
